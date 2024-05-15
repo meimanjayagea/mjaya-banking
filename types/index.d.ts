@@ -100,6 +100,13 @@ declare type AccountTypes =
 
 declare type Category = "Food and Drink" | "Travel" | "Transfer";
 
+interface CustomInputProps {
+  control: Control<z.infer<typeof formSchema>>,
+  name: FieldPath<z.infer<typeof formSchema>>,
+  label: string,
+  placeholder: string
+}
+
 declare type CategoryCount = {
   name: string;
   count: number;
@@ -202,7 +209,7 @@ declare interface BankTabItemProps {
   appwriteItemId?: string;
 }
 
-declare interface TotlaBalanceBoxProps {
+declare interface TotalBalanceBoxProps {
   accounts: Account[];
   totalBanks: number;
   totalCurrentBalance: number;
@@ -210,6 +217,7 @@ declare interface TotlaBalanceBoxProps {
 
 declare interface FooterProps {
   user: User;
+  type?: 'mobile' | 'desktop'
 }
 
 declare interface RightSidebarProps {
