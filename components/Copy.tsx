@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 
 const Copy = ({ title }: { title: string }) => {
+  
   const [hasCopied, setHasCopied] = useState(false);
 
   const copyToClipboard = () => {

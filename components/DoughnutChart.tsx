@@ -9,13 +9,11 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 const DoughnutChart = ({accounts}: DoughnutChartProps) => {
     
     const data ={
-        datasets: [
-            {
+        datasets: [{
               label: "Banks",
               data:[1250, 2500, 2454],
               backgroundColor: ['#08747b6', '#2265d8', '#2f91fa']
-            }
-          ],
+            }],
           labels: ['Bank 1', 'Bank 2', 'Bank 3']
     }
     
