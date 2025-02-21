@@ -10,8 +10,8 @@ const ibmPlexSerif = IBM_Plex_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "MJAYA Bank",
-  description: "MJAYA Bank is a modern banking platform for everyone",
+  title: "Meiman Jaya Gea",
+  description: "Meiman Jaya Gea",
   icons:{
     icon:'/icons/logo.svg'
   }
